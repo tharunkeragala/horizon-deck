@@ -1,0 +1,1 @@
+Horizon Deck is a responsive, user-friendly travel agency website that promotes curated travel destinations, tour packages, and travel services. The site will allow users to explore destinations, browse package details, submit enquiries, and view company information. 
