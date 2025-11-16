@@ -1,0 +1,84 @@
+/* Right aling nav bar items */
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+/* Nav toggle */
+.navbar-toggler {
+background-color: #148DD9;
+    border: none;
+}
+.navbar-toggler:hover {
+    background-color: #50C4F2;
+    border: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus:hover {
+    box-shadow: none;
+    border: none;
+}
+
+/* Base button override */
+.btn {
+    border: none;
+    color: #000000;
+}
+
+/* Hover state */
+.btn:hover {
+    background-color: #50C4F2;
+    color: #000000;
+    border: none;
+}
+
+/* Active when clicked*/
+.btn:active,
+.btn:active:hover {
+    background-color: #148DD9;
+    color: #000;
+    transform: translateY(1px);
+}
+
+/* Active page button */
+.btn.active {
+    background-color: #148DD9;
+    color: #000000;
+    border: none;
+}
+
+/* Outline-success buttons*/
+.btn-outline-success {
+    color: #000000;
+    border: none;
+}
+
+/* Dropdown open state */
+.btn.show {
+    background-color: #50C4F2;
+    color: #000000;
+    border: none;
+}
+
+/* Dropdown item select */
+.dropdown-item:active {
+    background-color: #50C4F2;
+    color: #000000;
+}
+.dropdown-item:hover {
+    background-color: #50c4f288;
+    color: #000000;
+}
+
+/* Hero section */
+/* Carousel indicator height */
+#carouselExampleAutoplaying {
+    max-height: 980px; /* or any height you prefer */
+    overflow: hidden;   /* hides empty space if images are smaller */
+}
+
+#carouselExampleAutoplaying img {
+    width: 100%;
+    height: auto; /* keeps image ratio */
+}
+
