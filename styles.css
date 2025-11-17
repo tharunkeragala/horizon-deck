@@ -70,15 +70,60 @@ background-color: #148DD9;
     color: #000000;
 }
 
-/* Hero section */
-/* Carousel indicator height */
-#carouselExampleAutoplaying {
-    max-height: 980px; /* or any height you prefer */
-    overflow: hidden;   /* hides empty space if images are smaller */
+body {
+    font-size: 18px;
 }
 
-#carouselExampleAutoplaying img {
+/* Hero section */
+.hero-section {
+    position: relative;
     width: 100%;
-    height: auto; /* keeps image ratio */
+    height: 980px;
 }
+
+#carouselExampleCaptions {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#carouselExampleCaptions .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#carouselExampleCaptions .carousel-item {
+    height: 100%; /* Ensure carousel item takes full height */
+}
+
+#carouselExampleCaptions .carousel-item img {
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+    width: 100%; /* Stretch to full width */
+    height: 100%; /* Stretch to full height */
+}
+
+/* Optional: Adjust for smaller screens */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 400px; /* Adjust height for mobile */
+    }
+    #carouselExampleCaptions .carousel-item img {
+        object-position: center; /* Ensure image is centered in the container */
+    }
+    .carousel-caption {
+        bottom: 10px; /* Move caption higher for mobile */
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .carousel-caption h1 {
+        font-size: 18px; /* Adjust title size */
+    }
+
+    .carousel-caption p {
+        font-size: 12px; /* Adjust paragraph size */
+    }
+}
+
 
