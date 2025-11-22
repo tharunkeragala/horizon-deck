@@ -41,6 +41,7 @@
     box-shadow: 2px 2px 20px rgba(0, 0, 0, .1);
     background-image: none;
 }
+
 /* Change font color to black when scrolled */
 .custom-navbar.scrolled a,
 .custom-navbar.scrolled .navbar-brand,
@@ -66,13 +67,15 @@
 
 /* Nav toggle */
 .navbar-toggler {
-background-color: #148DD9;
+    background-color: #148DD9;
     border: none;
 }
+
 .navbar-toggler:hover {
     background-color: #50C4F2;
     border: none;
 }
+
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler:focus:hover {
@@ -126,6 +129,7 @@ background-color: #148DD9;
     background-color: #50C4F2;
     color: #000000;
 }
+
 .dropdown-item:hover {
     background-color: #50c4f288;
     color: #000000;
@@ -156,13 +160,17 @@ body {
 }
 
 #carouselExampleCaptions .carousel-item {
-    height: 100%; /* Ensure carousel item takes full height */
+    height: 100%;
+    /* Ensure carousel item takes full height */
 }
 
 #carouselExampleCaptions .carousel-item img {
-    object-fit: cover; /* Maintain aspect ratio and fill the container */
-    width: 100%; /* Stretch to full width */
-    height: 100%; /* Stretch to full height */
+    object-fit: cover;
+    /* Maintain aspect ratio and fill the container */
+    width: 100%;
+    /* Stretch to full width */
+    height: 100%;
+    /* Stretch to full height */
 }
 
 .carousel-caption {
@@ -186,42 +194,157 @@ body {
 
 
 /* body section hm-welcome */
+/* hm-welcome */
 .hm-welcome {
-    padding: 100px 0;
+    padding: 0 100px;
 }
+
+.hm-welcome .inner-wrapper {
+    display: flex;
+    justify-content: space-between;   /* space between columns */
+    gap: 50px;                         /* optional spacing between columns */
+}
+.colomun {
+    flex: 1;                           /* each column takes 50% width */
+}
+
+.colomun .image-wrapper img {
+    width: 100%;
+    height: 700px;
+    display: block;
+}
+
+.hm-welcome .inner-wrapper .column {
+    position: relative;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+}
+
+img.img {
+    height: 450px;
+}
+
+.hm-welcome .title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000;
+    font-family: 'SF Pro Rounded';
+}
+
+.hm-welcome .sub-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    font-family: 'SF Pro Rounded';
+    padding: 20px 0 10px 0;
+
+}
+.link {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    color: #483fad;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.link .text {
+    display: inline-flex;
+    flex-direction: column;
+    font-family: "Raleway", serif;
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #321ab9;
+    padding: 5px 10px;
+}
+
+.hm-welcome .desc , .text {
+    font-size: .9333333333vw;
+    line-height: 1.6666666667vw;
+    font-family: 'SF Pro Rounded';
+    padding:0 0 15px 0px;
+}
+
+.statistics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+    .hm-welcome .inner-wrapper .statistics .item {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1.0416666667vw;
+        font-size: 1.7291666667vw;
+    }
+        .item-inner{
+            text-align: center;
+        }
+
+        .item-inner .title {
+            font-size: 16px;
+            color: #000000;
+            font-family: 'SF Pro Rounded';
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
 
 
 /* Optional: Adjust for smaller screens */
 @media (max-width: 768px) {
     .hero-section {
-        height: 400px; /* Adjust height for mobile */
+        height: 400px;
+        /* Adjust height for mobile */
     }
+
     #carouselExampleCaptions .carousel-item img {
-        object-position: center; /* Ensure image is centered in the container */
+        object-position: center;
+        /* Ensure image is centered in the container */
     }
+
     .carousel-caption {
-        bottom: 10px; /* Move caption higher for mobile */
-        font-size: 14px; /* Smaller font size for mobile */
+        bottom: 10px;
+        /* Move caption higher for mobile */
+        font-size: 14px;
+        /* Smaller font size for mobile */
     }
 
     .carousel-caption h1 {
-        font-size: 18px; /* Adjust title size */
+        font-size: 18px;
+        /* Adjust title size */
     }
 
     .carousel-caption p {
-        font-size: 12px; /* Adjust paragraph size */
+        font-size: 12px;
+        /* Adjust paragraph size */
     }
 
     .carousel-caption {
-    top: 50%;
-    transform: translateY(-50%);
-    bottom: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: auto;
     }
 
     .carousel-caption .title {
         font-size: 6vw;
         line-height: 5vw;
     }
+
     .carousel-caption .sub-title {
         font-size: 3.5vw;
         line-height: 4vw;
@@ -229,17 +352,15 @@ body {
     }
 
     .navbar {
-    height: fit-content;
-    background-image: linear-gradient(#000000, transparent);
+        height: fit-content;
+        background-image: linear-gradient(#000000, transparent);
     }
 
     .navbar.scrolled {
-    background-color: #fff;
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, .1);
-    background-image: none;
-    height: fit-content;
+        background-color: #fff;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, .1);
+        background-image: none;
+        height: fit-content;
     }
 
 }
-
-
