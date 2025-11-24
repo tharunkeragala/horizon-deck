@@ -445,12 +445,6 @@ body {
     position: relative;
 }
 
-#carouselExample .carousel-inner,
-#carouselExample .carousel-item,
-#carouselExample .carousel-item img {
-    /* height: 100%; */
-}
-
 .carousel-control-prev, .carousel-control-next {
     position: absolute;
     top: 50%;
