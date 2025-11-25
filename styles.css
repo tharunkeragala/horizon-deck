@@ -147,12 +147,13 @@
 
 body {
     font-size: 18px;
+    font-family: "Playfair Display", serif !important;
 }
 
 .feature-list .text {
     font-size: 15px;
     line-height: 1.6;
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
 }
 
 /* Hero section */
@@ -209,13 +210,13 @@ body {
 .carousel-caption .title {
     font-size: 5.6875vw;
     line-height: 4.1666666667vw;
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
 }
 
 .carousel-caption .sub-title {
     font-size: 2.175vw;
     line-height: 2.5vw;
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
     margin-top: 15px;
 }
 
@@ -251,7 +252,7 @@ body {
 .title {
     font-size: 42px;
     font-weight: 700;
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
     color: #ffffff;
     margin-bottom: 15px;
 }
@@ -261,7 +262,7 @@ body {
     font-weight: 400;
     color: #ffffff;
     margin-bottom: 10px;
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
     padding-top: 15px;
 
 }
@@ -269,7 +270,7 @@ body {
 .desc {
     font-size: 16px;
     line-height: 1.8;
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
     margin-bottom: 20px;
 }
 
@@ -376,7 +377,7 @@ body {
 .hm-passion .title-wrapper .sub-title .text {
     display: inline-flex;
     flex-direction: column;
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
@@ -386,7 +387,7 @@ body {
 }
 
 .hm-passion .title-wrapper .title {
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
     font-weight: 600;
     font-size: 30px;
     line-height: 25px;
@@ -398,7 +399,7 @@ body {
 }
 
 .hm-passion .title-wrapper .title-2 {
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
     font-weight: 400;
     font-size: 26px;
     line-height: 34px;
@@ -503,7 +504,7 @@ body {
 .hm-locales .title-wrapper .sub-title .text {
     display: inline-flex;
     flex-direction: column;
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
@@ -513,7 +514,7 @@ body {
 }
 
 .hm-locales .title-wrapper .title {
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
     font-weight: 600;
     font-size: 30px;
     line-height: 37px;
@@ -525,7 +526,7 @@ body {
 }
 
 .hm-locales .title-wrapper .title-2 {
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
     font-weight: 400;
     font-size: 26px;
     line-height: 34px;
@@ -687,7 +688,7 @@ body {
 .hm-destinations .title-wrapper .sub-title .text {
     display: inline-flex;
     flex-direction: column;
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
@@ -697,7 +698,7 @@ body {
 }
 
 .hm-destinations .title-wrapper .title {
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
     font-weight: 600;
     font-size: 30px;
     line-height: 37px;
@@ -710,7 +711,7 @@ body {
 }
 
 .hm-destinations .title-wrapper .title-2 {
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
     font-weight: 400;
     font-size: 26px;
     line-height: 34px;
@@ -730,6 +731,44 @@ body {
 .hm-destinations .inner-wrapper .intro-wrapper {
     text-align: center;
     padding: 0 20px;
+}
+
+
+/* Card at hm-featured-tours */
+.custom-card {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+/* Image fills the card but never stretches */
+.custom-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Overlay text styling */
+.overlay-bottom {
+    bottom: 0;
+    top: auto;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0)); /* fade gradient */
+    color: #fff;
+    font-family: "Playfair Display", serif !important;
+    padding: 20px;
+}
+
+/* Ensure text stands out */
+.overlay-bottom h5,
+.overlay-bottom p,
+.overlay-bottom small {
+    color: #fff !important;
+}
+
+.tours-wrapper {
+    padding: 10px;
+    border: none;
 }
 
 
@@ -941,7 +980,7 @@ body {
 }
 
 .destination-title {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif !important;
     font-size: 25.6px;
     line-height: 33.6px;
     margin-bottom: 6.4px;
@@ -950,7 +989,7 @@ body {
 }
 
 .destination-category {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif !important;
     font-size: 11.2px;
     line-height: 14.4px;
     font-weight: 500;
@@ -971,7 +1010,7 @@ body {
 .hm-featured-tours .title-wrapper .sub-title .text {
     display: inline-flex;
     flex-direction: column;
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
@@ -981,7 +1020,7 @@ body {
 }
 
 .hm-featured-tours .title-wrapper .title {
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
     font-weight: 600;
     font-size: 30px;
     line-height: 37px;
@@ -993,7 +1032,7 @@ body {
 }
 
 .hm-featured-tours .title-wrapper .title-2 {
-    font-family: 'SF Pro Rounded';
+    font-family: "Playfair Display", serif !important;
     font-weight: 400;
     font-size: 26px;
     line-height: 34px;
@@ -1013,6 +1052,10 @@ body {
 .hm-featured-tours .inner-wrapper .intro-wrapper {
     text-align: center;
     padding: 0 20px;
+}
+
+.pt-5 {
+    padding-top: 5rem !important;
 }
 
 
