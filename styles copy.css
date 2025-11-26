@@ -1331,3 +1331,125 @@ a.a-tag {
 .contact-details .single-num .text a:hover {
     text-decoration: underline;
 }
+
+
+/* ==========================================================
+   GLOBAL TITLE-WRAPPER (All Sections Except Hero Section)
+   Just add the section name before .title-wrapper to use it
+   Example: .hm-passion .title-wrapper, .hm-vision .title-wrapper etc.
+========================================================== */
+.hm-passion .title-wrapper,
+.hm-vision .title-wrapper,
+.hm-mission .title-wrapper,
+.hm-values .title-wrapper,
+.hm-legacy .title-wrapper,
+.hm-story .title-wrapper,
+.hm-about .title-wrapper,
+.hm-services .title-wrapper,
+.hm-team .title-wrapper,
+.hm-contact .title-wrapper {
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* ------------ SUB TITLE ICON + TEXT ------------ */
+.hm-passion .title-wrapper .sub-title,
+.hm-vision .title-wrapper .sub-title,
+.hm-mission .title-wrapper .sub-title,
+.hm-values .title-wrapper .sub-title,
+.hm-story .title-wrapper .sub-title,
+.hm-legacy .title-wrapper .sub-title,
+.hm-about .title-wrapper .sub-title,
+.hm-services .title-wrapper .sub-title,
+.hm-team .title-wrapper .sub-title,
+.hm-contact .title-wrapper .sub-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* small decorative icon */
+.hm-passion .title-wrapper .sub-title .icon,
+.hm-vision .title-wrapper .sub-title .icon,
+.hm-mission .title-wrapper .sub-title .icon,
+.hm-values .title-wrapper .sub-title .icon,
+.hm-story .title-wrapper .sub-title .icon,
+.hm-legacy .title-wrapper .sub-title .icon,
+.hm-about .title-wrapper .sub-title .icon,
+.hm-services .title-wrapper .sub-title .icon,
+.hm-team .title-wrapper .sub-title .icon,
+.hm-contact .title-wrapper .sub-title .icon {
+    display: inline-flex;
+    flex-direction: column;
+    width: 12px;
+    height: 12px;
+    margin-bottom: 10px;
+}
+
+/* ------------ SUB-TITLE TEXT ------------ */
+.hm-passion .title-wrapper .sub-title .text,
+.hm-vision .title-wrapper .sub-title .text,
+.hm-mission .title-wrapper .sub-title .text,
+.hm-values .title-wrapper .sub-title .text,
+.hm-story .title-wrapper .sub-title .text,
+.hm-legacy .title-wrapper .sub-title .text,
+.hm-about .title-wrapper .sub-title .text,
+.hm-services .title-wrapper .sub-title .text,
+.hm-team .title-wrapper .sub-title .text,
+.hm-contact .title-wrapper .sub-title .text {
+    display: inline-flex;
+    flex-direction: column;
+    font-family: "Playfair Display", serif !important;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* -------------- MAIN TITLE (H1 STYLE) -------------- */
+.hm-passion .title-wrapper .title,
+.hm-vision .title-wrapper .title,
+.hm-mission .title-wrapper .title,
+.hm-values .title-wrapper .title,
+.hm-story .title-wrapper .title,
+.hm-legacy .title-wrapper .title,
+.hm-about .title-wrapper .title,
+.hm-services .title-wrapper .title,
+.hm-team .title-wrapper .title,
+.hm-contact .title-wrapper .title {
+    font-family: "Playfair Display", serif !important;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* -------------- SECONDARY TITLE (H2 STYLE) -------------- */
+.hm-passion .title-wrapper .title-2,
+.hm-vision .title-wrapper .title-2,
+.hm-mission .title-wrapper .title-2,
+.hm-values .title-wrapper .title-2,
+.hm-story .title-wrapper .title-2,
+.hm-legacy .title-wrapper .title-2,
+.hm-about .title-wrapper .title-2,
+.hm-services .title-wrapper .title-2,
+.hm-team .title-wrapper .title-2,
+.hm-contact .title-wrapper .title-2 {
+    font-family: "Playfair Display", serif !important;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #000;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
