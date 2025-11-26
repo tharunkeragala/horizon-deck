@@ -1331,3 +1331,104 @@ a.a-tag {
 .contact-details .single-num .text a:hover {
     text-decoration: underline;
 }
+
+.page-desc-wrapper{
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    font-weight: 200;
+    text-transform: none;
+    color: #000;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+/* destination-wrapper */
+/* Smooth hover animation */
+.card {
+    transition: 0.3s ease;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hm-featured-tours .card {
+    transition: 0.3s ease;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+}
+
+/* Hover lift + shadow */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 28px rgba(0, 0, 0, 0.18);
+}
+
+/* Slight zoom on image */
+.card-img-top {
+    transition: 0.4s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.08);
+}
+
+/* Soft glow following cursor */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at var(--x) var(--y), rgba(255,255,255,0.35), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+/* Page fade-in animation */
+.page-animation {
+    animation: fadeIn 0.45s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Animated stagger for each card */
+#cardWrapper {
+    min-height: 650px;
+    position: relative;
+}
+
+#cardWrapper.fade-out {
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+#cardWrapper.fade-in {
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+#cardWrapper .card {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+#cardWrapper .card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
