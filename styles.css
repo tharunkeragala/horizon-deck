@@ -1090,3 +1090,159 @@ a.a-tag {
     color: black;
     text-decoration: none;
 }
+
+.breadcrumb-new {
+    --bs-breadcrumb-padding-x: 0;
+    --bs-breadcrumb-padding-y: 0;
+    /* --bs-breadcrumb-margin-bottom: 1rem; */
+    --bs-breadcrumb-bg: ;
+    --bs-breadcrumb-border-radius: ;
+    --bs-breadcrumb-divider-color: var(--bs-secondary-color);
+    --bs-breadcrumb-item-padding-x: 0.5rem;
+    --bs-breadcrumb-item-active-color: var(--bs-secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--bs-breadcrumb-padding-y) var(--bs-breadcrumb-padding-x);
+    margin-bottom: var(--bs-breadcrumb-margin-bottom);
+    font-size: var(--bs-breadcrumb-font-size);
+    list-style: none;
+    background-color: var(--bs-breadcrumb-bg);
+    border-radius: var(--bs-breadcrumb-border-radius);
+}
+
+/* Contact-form */
+
+/* Global container styling */
+.contact-form {
+    padding: 25px 0;
+}
+
+/* Form box styling */
+.contact-form .container form {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.contact-form .container form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Labels */
+.form-label, .form-check {
+    font-weight: 600;
+    color: #003d66;
+}
+
+/* Form controls */
+.form-control, 
+.form-select {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #cbdceb;
+    box-shadow: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.btn {
+    border: none;
+    color: #ffffff;
+}
+
+.form-control:focus, 
+.form-select:focus {
+    border-color: #0077b6;
+    box-shadow: 0 0 0 0.15rem rgba(0, 119, 182, 0.25);
+}
+
+/* Input group (flag + phone) */
+.input-group-text {
+    background: #f0f8ff;
+    border-radius: 10px 0 0 10px !important;
+}
+
+/* Dropdown caret icon */
+.input-group-text i {
+    color: #0077b6;
+}
+
+/* Button styling */
+.btn-primary {
+    background:#148DD9;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #0096c7;
+    transform: translateY(-2px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+    .contact-form .container form {
+        padding: 25px;
+    }
+}
+
+/* page intro */
+
+.page-intro {
+    padding: 8px 0;
+    text-align: center;
+}
+
+.breadcrumb-new {
+    display: inline-flex;
+    gap: 8px;
+    padding: 2px 18px;
+    background: #ffffff;
+    border: 1px solid #e1ecf4;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.breadcrumb-new .breadcrumb-item {
+    color: #4a6b82;
+    font-weight: 500;
+}
+
+.breadcrumb-new .breadcrumb-item.active {
+    color: #005f8f;
+    font-weight: 600;
+}
+
+.breadcrumb-new .a-tag {
+    color: #4a6b82;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.breadcrumb-new .a-tag:hover {
+    color: #005f8f;
+}
+
+/* Divider arrow */
+.breadcrumb-new .breadcrumb-item + .breadcrumb-item::before {
+    color: #9bb5c7;
+}
+
+/* Optional: reduce spacing on small screens */
+@media (max-width: 576px) {
+    .page-intro {
+        padding: 25px 0;
+    }
+    .breadcrumb-new {
+        padding: 6px 14px;
+        font-size: 0.85rem;
+    }
+}
+
