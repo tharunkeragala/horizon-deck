@@ -258,7 +258,7 @@ body {
 .title {
     font-size: 42px;
     font-weight: 700;
-    font-family: "Playfair Display", serif !important;
+    font-family: "Playfair Display", Didot, "Bodoni MT", "Times New Roman", serif;
     color: #ffffff;
     margin-bottom: 15px;
 }
@@ -1432,3 +1432,11 @@ a.a-tag {
     transform: translateY(0);
 }
 
+.bullet{
+    position: relative;
+    top: 9px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #000;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Lead Viewer</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background:#f1f5f9;
+        }
+        .card {
+            border-radius:14px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.08);
+        }
+        .form-title{
+            font-size: 22px;
+            font-weight:600;
+            color:#0d6efd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <div class="card p-4">
+                <p class="form-title text-center">📩 Facebook Lead Details</p>
+                <hr>
+
+                <!-- Lead Data Fields -->
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" id="leadName" class="form-control" readonly>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" id="leadEmail" class="form-control" readonly>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Phone Number</label>
+                        <input type="text" id="leadPhone" class="form-control" readonly>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Facebook Form ID</label>
+                        <input type="text" id="leadFormId" class="form-control" readonly>
+                    </div>
+                </form>
+
+                <button class="btn btn-primary w-100" onclick="loadLead()">Load Demo Lead</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+/* -------- SAMPLE STATIC DATA (replace with API call later) -------- */
+fetch("http://localhost:8080/api/leads/latest")
+   .then(res => res.json())
+   .then(data => {
+       document.getElementById("leadName").value = data.fullName;
+       document.getElementById("leadEmail").value = data.email;
+       document.getElementById("leadPhone").value = data.phone;
+       document.getElementById("leadFormId").value = data.formId;
+   });
+   
+
+/* -------- LOAD LEAD DATA INTO FORM -------- */
+function loadLead(){
+    document.getElementById("leadName").value = sampleLead.full_name;
+    document.getElementById("leadEmail").value = sampleLead.email;
+    document.getElementById("leadPhone").value = sampleLead.phone;
+    document.getElementById("leadFormId").value = sampleLead.form_id;
+}
+</script>
+
+</body>
+</html>

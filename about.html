@@ -37,11 +37,11 @@
                             <a class="btn me-2 btn-outline-success" href="./destination.html">Destination</a>
                         </li>
                         <li class="nav-item dropdown d-flex align-items-center">
-                            <a class="btn btn-outline-success me-0 rounded-end-0" href="./about.html">
+                            <a class="btn btn-outline-success me-0 rounded-end-0 active" aria-current="page" href="./about.html">
                                 About Us
                             </a>
                             <button
-                                class="btn btn-outline-success dropdown-toggle dropdown-toggle-split rounded-start-0"
+                                class="btn btn-outline-success dropdown-toggle dropdown-toggle-split rounded-start-0 active"
                                 type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="visually-hidden">Toggle Dropdown</span>
                             </button>
@@ -60,10 +60,13 @@
                         <li class="nav-item">
                             <a class="btn me-2 btn-outline-success" href="#">Tours</a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="btn me-2 active" aria-current="page" href="./contactus.html">Contact Us</a>
+                            <a class="btn me-2 btn-outline-success" href="./contactus.html">Contact Us</a>
                         </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="btn me-2 active" aria-current="page" href="./contactus.html">Contact Us</a>
+                        </li> -->
                     </ul>
 
                     <form class="d-flex" role="search">
@@ -133,155 +136,78 @@
                 aria-label="breadcrumb">
                 <ol class="breadcrumb-new">
                     <li class="breadcrumb-item"><a href="./home.html" class="a-tag">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Contact Us </li>
+                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
                 </ol>
             </nav>
         </div>
         <!-- hero section end -->
 
         <!-- body section -->
+        <section class="hm-welcome">
+            <div class="container">
+                <div class="inner-wrapper">
+                    <div class="column text-column">
+                        <div class="sub-title">Welcome to HorizonDeck</div>
+                        <div class="title">Your Home of Legendary Sri Lankan Hospitality</div>
 
-
-        <section class="hm-destinations">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="inner-wrapper">
-                        <div class="intro-wrapper">
-                            <div class="title-wrapper">
-                                <div class="sub-title">
-                                    <span class="icon">
-                                        <!-- <svg class="horizon-icon">
-                                            <use xlink:href="#horizon-icon"></use>
-                                        </svg> -->
-                                    </span>
-                                    <span class="text">Leave a message</span>
-                                </div>
-                                <h2 class="h2 title">
-                                    Connect With Us </h2>
-                                <h3 class="h3 title-2">
-                                    Let's Craft Your Dream Journey Together </h3>
-                            </div>
-                        </div>
-                        <div class="contact-form">
-                            <div class="container">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="yourName" class="form-label">Your Name</label>
-                                        <input type="text" class="form-control" id="yourName" required>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label for="yourEmail" class="form-label">Your Email</label>
-                                        <input type="email" class="form-control" id="yourEmail" required>
-                                    </div>
-
-                                    <div class="row mb-3">
-                                        <div class="col-md-6 mb-3 mb-md-0">
-                                            <label for="countrySelect" class="form-label">Country</label>
-                                            <div class="input-group">
-                                                <select class="form-select" id="countrySelect" required>
-                                                    <option selected disabled value="">Select</option>
-                                                    <option value="us">Sri Lanka</option>
-                                                    <option value="us">United States</option>
-                                                    <option value="ca">Canada</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <label for="phoneNumber" class="form-label">Phone</label>
-                                            <div class="input-group">
-                                                <span class="input-group-text">
-                                                    <img src="https://flagcdn.com/w20/lk.png" alt="US Flag"
-                                                        style="width: 20px;">
-                                                    <i class="bi bi-caret-down-fill ms-1">+94</i> </span>
-                                                <input type="tel" class="form-control" id="phoneNumber"
-                                                    placeholder="e.g, 77 000 0123" required>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-3">
-                                        <div class="col-lg-4 col-md-4 mb-3 mb-lg-0">
-                                            <label for="noAdults" class="form-label">No Of Adults</label>
-                                            <input type="number" class="form-control" id="noAdults" min="1" value="1"
-                                                required>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-4 mb-3 mb-lg-0">
-                                            <label for="noKids" class="form-label">No Of Kids (0 - 11 Years)</label>
-                                            <input type="number" class="form-control" id="noKids" min="0" value="0">
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-4">
-                                            <label for="noInfants" class="form-label">No Of Infants</label>
-                                            <input type="number" class="form-control" id="noInfants" min="0" value="0"
-                                                required>
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-3">
-                                        <div class="col-md-6 mb-3 mb-md-0">
-                                            <label for="arrivalDate" class="form-label">Arrival Date</label>
-                                            <input type="date" class="form-control" id="arrivalDate">
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <label for="departureDate" class="form-label">Departure Date</label>
-                                            <input type="date" class="form-control" id="departureDate">
-                                        </div>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label for="messageArea" class="form-label">Message</label>
-                                        <textarea class="form-control" id="messageArea" rows="4"></textarea>
-                                    </div>
-                                    <div class="form-check pt-2 pb-3">
-                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                                        <label class="form-check-label" for="checkDefault">
-                                            Privacy Policy / Terms and Conditions.
-                                        </label>
-                                    </div>
-
-
-                                    <button type="submit" class="btn btn-primary">Submit Inquiry</button>
-                                </form>
-                            </div>
+                        <div class="btn-wrapper">
+                            <a class="link" href="#" target="_self">
+                                <span class="text">Learn More About Us</span>
+                                <span class="icon">&#8594;</span>
+                            </a>
                         </div>
 
+                        <div class="desc">
+                            A part of the HorizonDeck family, our journey began in 1980 to show visitors from near and far, 
+                            the wonders of the paradise we call home. Today, we are a leading destination management company 
+                            renowned for our legendary hospitality. Our team comprises experienced professionals who know the 
+                            country and take pride in sharing its treasures. Our mission is to ensure that every guest enjoys 
+                            the best experience possible while in our care. The many global accolades we have received confirm our deep 
+                            commitment to excellence in all we do and our ability to deliver the highest of service standards.
+                        </div>
+
+                        <ul class="feature-list">
+                            <li>
+                                <span class="bullet"></span>
+                                <span class="text">We place a premium on providing a “legendary” service</span>
+                            </li>
+                            <li>
+                                <span class="bullet"></span>
+                                <span class="text">We have a well maintained fleet of vehicles and source the best available when required</span>
+                            </li>
+                            <li>
+                                <span class="bullet"></span>
+                                <span class="text">We perform to the highest standards possible and always strive to improve</span>
+                            </li>
+                            <li>
+                                <span class="bullet"></span>
+                                <span class="text">We pride ourselves on reliability</span>
+                            </li>
+                            <li>
+                                <span class="bullet"></span>
+                                <span class="text">We have over 50 years of experience and counting</span>
+                            </li>
+                            <li>
+                                <span class="bullet"></span>
+                                <span class="text">We provide excellent value for money</span>
+                            </li>
+
+                            
+                        </ul>
+
+                        
+                    </div>
+
+                    <div class="column image-column">
+                        <div class="image-wrapper">
+                            <img src="./Images/Ayubowan.png" alt="Welcome Image">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contactus-detials">
-            <div class="contact-details">
-                <div class="title">HorizonDeck (Private) Limited </div>
-                <div class="address">
-                    <address>"HorizonDeck",<br>
-                        40/1, Nawam Mawatha, Colombo 02, SRI LANKA</address>
-                </div>
-                <div class="email">
-                    <a href="mailto:inquiries@horizondeck.com">inquiries@horizondeck.com</a>
-                </div>
-                <div class="con-numbers">
-                    <div class="single-num">
-                        <div class="icon">
-                        </div>
-                        <div class="text">
-                            <div class="label">Hotline (24/7) Only for International Inquiries</div>
-                            <a href="tel:+94 77 726 5746">+94 77 726 5746</a>
-                        </div>
-                    </div>
-                    <div class="single-num">
-                        <div class="text">
-                            <div class="label">General</div>
-                            <a href="tel:+94 112 345 700">+94 112 345 700</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
 
 
         <section class="special-offers">
