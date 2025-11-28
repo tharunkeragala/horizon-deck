@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Horizon Deck</title>
+    <!-- Travel agency website -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./home.html">
+                    <img src="./Images/logo.png" alt="HorizonDeck" width="160" height="35"
+                        class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="btn me-2 btn-outline-success" href="./home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn me-2 btn-outline-success" href="./destination.html">Destination</a>
+                        </li>
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <a class="btn btn-outline-success me-0 rounded-end-0 active" aria-current="page"
+                                href="./about.html">
+                                About Us
+                            </a>
+                            <button
+                                class="btn btn-outline-success dropdown-toggle dropdown-toggle-split rounded-start-0 active"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./leadership.html">Leadership</a></li>
+                                <li><a class="dropdown-item" href="./vision-mission.html">Vision & Mission</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="btn me-2 btn-outline-success" href="#">Experiences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn me-2 btn-outline-success" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn me-2 btn-outline-success" href="#">Tours</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn me-2 btn-outline-success" href="./contactus.html">Contact Us</a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="btn me-2 active" aria-current="page" href="./contactus.html">Contact Us</a>
+                        </li> -->
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- Nav bar end -->
+    <main>
+        <!-- hero section -->
+        <div class="hero-section-all">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Images/Leadership-1920x1080-2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-block">
+                            <div class="title">Connect with Heartfelt Hospitality</div>
+                            <div class="sub-title">Where Conversations Spark Journeys
+                                <div class="hr"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/benjamin-r-SZoTel1Y4qc-unsplash.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-block">
+                            <div class="title">Embark on Your Odyssey</div>
+                            <div class="sub-title">Your Home of Wonderlust</div>
+                            <div class="hr"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/Fort-Lighthouse-1240x710-1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-block">
+                            <div class="title">A Home Beyond Walls</div>
+                            <div class="sub-title">Your Space, Your Story, Your Sanctuary Awaits</div>
+                            <div class="hr"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="page-intro">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                aria-label="breadcrumb">
+                <ol class="breadcrumb-new">
+                    <li class="breadcrumb-item"><a href="./home.html" class="a-tag">Home</a></li>
+                    <li class="breadcrumb-item" aria-current="page"><a href="./about.html" class="a-tag">About Us</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Leadership</li>
+                </ol>
+            </nav>
+        </div>
+        <!-- hero section end -->
+
+        <!-- body section -->
+        <section class="lm-leader">
+            <div class="container">
+                <div class="inner-wrapper">
+                    <div class="column text-column">
+                        <div class="sub-title">The Outstanding Leadership</div>
+                        <div class="sub-title">Chairman & Managing Director</div>
+                        <div class="title">Person XX</div>
+                        <div class="desc">
+                            The warmth of her wide smile and her utter unaffected nature distract all who meet Shiromal
+                            Cooray as to what she really is: a leading figure in the travel industry who is prominently
+                            placed amongst the 50 most powerful women of business in Sri Lanka and the highly efficient
+                            and effective Chairman & Managing Director of Jetwing Travels: the main in-bound tour
+                            operator arm of Jetwing.
+
+                            As the daughter of Herbert Cooray – the founder and late Chairman of Jetwing, Shiromal was
+                            in essence an heir to his legacy – but ever independent of spirit, she had no wish to be a
+                            part of the family business and veered away from the leisure industry altogether to gain
+                            qualifications in finance. Subsequently, she joined the vibrant world of advertising – as an
+                            accountant at JWT, one of the leading ad agencies in Sri Lanka. Thriving in the fast paced,
+                            exciting atmosphere, she handled both accounts and media, rising quickly to become the
+                            Finance Director. When the opportunity arose to take up a similar post at JWT Hong Kong, she
+                            was glad to broaden her career prospects in the region, gaining valuable experience.
+                            <br><br>
+                            Leaving advertising after 7 years, she returned to Sri Lanka and to the Jetwing family to
+                            reinvent the travel division. The sector was increasing in scope in the early 90s and she
+                            entered the challenge of growing the business with her usual resoluteness and foresight;
+                            inspired and guided by her mentor and father. Over the years, Shiromal has steered the
+                            company’s progress to the success it enjoys today, but in her unassuming manner regards
+                            achievements as the norm, passing the credit on to the unstinted support of her team.
+                            <br><br>
+                            Deeply family oriented, Shiromal considers motherhood as possibly her greatest achievement.
+                            While travel is her line of business, it is also a pastime she enjoys – especially voyages
+                            of discovery to places that are off the everyday map. She loves to read – when time permits
+                            and has a passionate interest in nature and the great outdoors.
+                            <br><br>
+                            A Fellow Member of the Chartered Institute of Management Accountants (UK), Shiromal also has
+                            an MBA from (the University of Colombo). A dynamic presence in the corporate arena, she is
+                            the former Vice-President of the Travel Agents Association of Sri Lanka (TAASL) and the
+                            former President of the Sri Lanka Association of Inbound Tour Operators (SLAITO) - the
+                            foremost representative body for tour operators in Sri Lanka. She was also elected recently
+                            as the Chairperson of the Sri Lanka Institute of Directors (SLID).
+                            <br><br>
+                            As a director on the Board of Jetwing, she lends her invaluable support and insight to the
+                            day to day operations of the group, but also extends her expertise to all Jetwing interests
+                            that fall under the wing of travel. Shiromal is also a director at the advertising agency
+                            Leo Burnett and the investment bank Capital Alliance and commodity broker Ceylon Tea
+                            Brokers.
+                        </div>
+                        <ul class="feature-list">
+                            <li>
+                                <span class="bullet"></span>
+                                <span class="text">We place a premium on providing a “legendary” service</span>
+                            </li>
+                            <li>
+                                <span class="bullet"></span>
+                                <span class="text">We have a well maintained fleet of vehicles and source the best
+                                    available when required</span>
+                            </li>
+                            <li>
+                                <span class="bullet"></span>
+                                <span class="text">We perform to the highest standards possible and always strive to
+                                    improve</span>
+                            </li>
+                            <li>
+                                <span class="bullet"></span>
+                                <span class="text">We pride ourselves on reliability</span>
+                            </li>
+                            <li>
+                                <span class="bullet"></span>
+                                <span class="text">We have over 50 years of experience and counting</span>
+                            </li>
+                            <li>
+                                <span class="bullet"></span>
+                                <span class="text">We provide excellent value for money</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column image-column">
+                        <div class="image-wrapper">
+                            <img src="./Images/promodhya-abeysekara-gjd-7_3Ek_w-unsplash.jpg"
+                                style="height: 1100px; justify-content: center;" alt="Welcome Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lm-directors">
+            <div class="container">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Directors
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <!-- director 1 -->
+                                <div class="card mb-3" style="border: none;">
+                                    <div class="row g-0">
+                                        <div class="col-md-3">
+                                            <img src="./Images/botanical_garden.jpg" class="img-fluid rounded-start"
+                                                alt="..." style="max-height:300px; max-width: fit-content;">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body">
+                                                <h2 class="card-title">Person AA</h2>
+                                                <h5 class="card-title">Executive Director</h5>
+                                                <p class="card-text">AA was born in Colombo, SRI LANKA. On completion of
+                                                    his Primary Education at St. Joseph’s College, Colombo, his
+                                                    secondary Education was concluded at Aquinas College, Colombo. After
+                                                    a short stint of 1½ years with Ernest & Young (Chartered
+                                                    Accountants), Sri Lanka as an Accounts Trainee, he proceeded to the
+                                                    United Kingdom to undergo training with Ernst & Young in the UK
+                                                    whilst pursuing his Accounting studies. On his return to Sri Lanka,
+                                                    he moved to the Travel & Tourism Industry and worked for 3 Companies
+                                                    prior to establishing his own Travel Agency in 1987. This Company’s
+                                                    operations were transferred to Jetwing Travels when he joined the
+                                                    Company in 1994 in the capacity of Executive Director. Additionally
+                                                    he currently holds directorates in five Companies of the Jetwing
+                                                    Family and is on the Board of Capital Alliance Holdings & Capital
+                                                    Alliance Ltd. His hobbies and special interests include Music &
+                                                    Sports. He is a Life Member of the Sri Lanka - Japan Friendship
+                                                    Society, Sri Lanka-Australia-New Zealand Association and is the Vice
+                                                    President of the Sri Lanka Thailand Business Council in addition to
+                                                    being a Past President of the Rotary Club of Colombo West.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3" style="border: none;">
+                                    <div class="row g-0">
+                                        <div class="col-md-3">
+                                            <img src="./Images/botanical_garden.jpg" class="img-fluid rounded-start"
+                                                alt="..." style="max-height:300px; max-width: fit-content;">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body">
+                                                <h2 class="card-title">Person AA</h2>
+                                                <h5 class="card-title">Executive Director</h5>
+                                                <p class="card-text">AA was born in Colombo, SRI LANKA. On completion of
+                                                    his Primary Education at St. Joseph’s College, Colombo, his
+                                                    secondary Education was concluded at Aquinas College, Colombo. After
+                                                    a short stint of 1½ years with Ernest & Young (Chartered
+                                                    Accountants), Sri Lanka as an Accounts Trainee, he proceeded to the
+                                                    United Kingdom to undergo training with Ernst & Young in the UK
+                                                    whilst pursuing his Accounting studies. On his return to Sri Lanka,
+                                                    he moved to the Travel & Tourism Industry and worked for 3 Companies
+                                                    prior to establishing his own Travel Agency in 1987. This Company’s
+                                                    operations were transferred to Jetwing Travels when he joined the
+                                                    Company in 1994 in the capacity of Executive Director. Additionally
+                                                    he currently holds directorates in five Companies of the Jetwing
+                                                    Family and is on the Board of Capital Alliance Holdings & Capital
+                                                    Alliance Ltd. His hobbies and special interests include Music &
+                                                    Sports. He is a Life Member of the Sri Lanka - Japan Friendship
+                                                    Society, Sri Lanka-Australia-New Zealand Association and is the Vice
+                                                    President of the Sri Lanka Thailand Business Council in addition to
+                                                    being a Past President of the Rotary Club of Colombo West.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Senior Managers
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the second item’s accordion
+                                body. Let’s imagine this being filled with some actual content.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hm-featured-tours">
+            <div class="container">
+                <div class="row">
+                    <div class="inner-wrapper">
+                        <div class="intro-wrapper">
+                            <div class="title-wrapper">
+                                <div class="sub-title">
+                                    <!-- <span class="icon">
+                                        <svg class="horizondeck-icon">
+                                            <use xlink:href="#horizondeck-icon"></use>
+                                        </svg>
+                                    </span> -->
+                                    <span class="text">Your voyage of discovery begins here. Say yes. </span>
+                                </div>
+                                <h2 class="h2 title">
+                                    Discover paradise, the Jetwing way </h2>
+                                <h3 class="h3 title-2">
+                                    Your journey: your plan. </h3>
+                            </div>
+                            <div class="btn-wrapper">
+                                <a class="link" href="#" target="_self">
+                                    <span class="text">Learn More About Us</span>
+                                    <span class="icon">&#8594;</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tours-wrapper">
+                            <div class="card-group">
+                                <div class="card custom-card">
+                                    <img src="./Images/Ayubowan.png" class="card-img custom-img" alt="...">
+
+                                    <div class="card-img-overlay overlay-bottom">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            This is a wider card with supporting text below as a natural lead-in to
+                                            additional content.
+                                        </p>
+                                        <p class="card-text">
+                                            <small>Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card custom-card">
+                                    <img src="./Images/antonio-araujo-lLT8jXU0mx0-unsplash.jpg"
+                                        class="card-img custom-img" alt="...">
+
+                                    <div class="card-img-overlay overlay-bottom">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            This is a wider card with supporting text below as a natural lead-in to
+                                            additional content.
+                                        </p>
+                                        <p class="card-text">
+                                            <small>Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card custom-card">
+                                    <img src="./Images/david-kristianto-K5FIZ-R5R_k-unsplash.jpg"
+                                        class="card-img custom-img" alt="...">
+
+                                    <div class="card-img-overlay overlay-bottom">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            This is a wider card with supporting text below as a natural lead-in to
+                                            additional content.
+                                        </p>
+                                        <p class="card-text">
+                                            <small>Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- body section end -->
+
+
+    </main>
+    <footer class="text-dark pt-5" style="background: linear-gradient(to bottom, #ffffff, #a8d0f0);">
+        <div class="container pb-5">
+            <div class="row align-items-start">
+
+                <!-- Left Column -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-semibold mb-3">Subscribe to our Newsletter</h5>
+
+                    <!-- Social Icons -->
+                    <div class="mb-3">
+                        <a href="#" class="me-2 text-dark"><i class="bi bi-x"></i></a>
+                        <a href="#" class="me-2 text-dark"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="me-2 text-dark"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="me-2 text-dark"><i class="bi bi-linkedin"></i></a>
+                    </div>
+
+                    <!-- Logo -->
+                    <div class="mb-2">
+                        <img src="./Images/logo.png" alt="HorizonDeck" height="45"
+                            style="background:white; border-radius:8px;">
+                    </div>
+
+                    <!-- Hotline -->
+                    <p class="mb-0 fw-semibold">Hotline</p>
+                    <p class="fs-5 fw-bold">+94 77 423 7777</p>
+                </div>
+
+                <!-- Use Cases -->
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold mb-3">Navigation</h6>
+                    <ul class="list-unstyled">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Destinations</li>
+                        <li>Experiences</li>
+                        <li>Gallery</li>
+                        <li>Tours</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+
+                <!-- Explore -->
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold mb-3">Explore</h6>
+                    <ul class="list-unstyled">
+                        <li>Design</li>
+                        <li>Prototyping</li>
+                        <li>Development features</li>
+                        <li>Design systems</li>
+                        <li>Collaboration features</li>
+                        <li>Design process</li>
+                        <li>FigJam</li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold mb-3">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li>Blog</li>
+                        <li>Best practices</li>
+                        <li>Colors</li>
+                        <li>Color wheel</li>
+                        <li>Support</li>
+                        <li>Developers</li>
+                        <li>Resource library</li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Form -->
+                <div class="col-md-2 mb-4 text-md-end">
+                    <form>
+                        <div class="d-flex">
+                            <input type="email" class="form-control me-2" placeholder="you@example.com">
+                            <button class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Select the container you want to scroll horizontally
+        const scrollContainer = document.querySelector('.team-boxed .people');
+
+        // Function to handle mouse wheel scrolling
+        scrollContainer.addEventListener('wheel', (e) => {
+            // Prevent default vertical scroll behavior
+            e.preventDefault();
+
+            // Scroll horizontally based on the wheel delta (scroll amount)
+            scrollContainer.scrollLeft += e.deltaY * 2; // Adjust '2' to control speed (higher values = faster scroll)
+        });
+
+        // When the user scrolls down the page
+        window.onscroll = function () {
+            let navbar = document.querySelector('.custom-navbar');
+            let trigger = window.innerWidth <= 768 ? 340 : 930;  // mobile vs desktop
+
+            if (window.scrollY > trigger) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        };
+
+        // Highlight active thumbnail when carousel changes
+        const carousel = document.querySelector('#carouselExample');
+        const thumbnails = document.querySelectorAll('.carousel-thumbnails li');
+
+        carousel.addEventListener('slid.bs.carousel', function (event) {
+            thumbnails.forEach(t => t.classList.remove('active'));
+            thumbnails[event.to].classList.add('active');
+        });
+    </script>
+
+    <!-- Bootstrap 5 (no jQuery needed) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+
+
+
+
+
+</body>
+
+</html>

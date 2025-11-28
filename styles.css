@@ -276,7 +276,7 @@ body {
 
 .desc {
     font-size: 16px;
-    line-height: 1.8;
+    /* line-height: 1.8; */
     font-family: "Playfair Display", serif !important;
     margin-bottom: 20px;
 }
@@ -1652,4 +1652,16 @@ a.a-tag {
 
 .team-boxed .social a:hover {
   opacity: 1;
+}
+
+
+/* hm-leader */
+
+.lm-leader .image-wrapper{
+    
+    position: relative;
+    overflow: hidden;
+    padding-top: 0px;
+    box-sizing: border-box;
+
 }
