@@ -1441,3 +1441,215 @@ a.a-tag {
     border-radius: 50%;
     background-color: #000;
 }
+
+
+/* Team Box Styling */
+.team-boxed {
+  color: #313437;
+  background-color: #eef4f7;
+}
+
+.team-boxed p {
+  color: #7d8285;
+}
+
+.team-boxed h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+@media (max-width: 767px) {
+  .team-boxed h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.team-boxed .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.team-boxed .intro p {
+  margin-bottom: 0;
+}
+
+.team-boxed .people {
+  padding: 50px 0;
+  display: flex;  /* Align items horizontally */
+  flex-wrap: nowrap;  /* Prevent items from wrapping to the next row */
+  overflow-x: scroll;  /* Enable horizontal scrolling */
+  max-width: 100%;  /* Full width of the container */
+  -ms-overflow-style: none;  /* Hide scrollbar in IE/Edge */
+  scrollbar-width: thin;  /* Hide scrollbar in Firefox */
+}
+
+.team-boxed .people {
+  scrollbar-color: #a6ad429f #f1f1f1;  /* thumb color and track color for Firefox */
+}
+
+
+.team-boxed .people::-webkit-scrollbar {
+  height: 0; /* Hide scrollbar in Webkit browsers (Chrome, Safari) */
+}
+
+.team-boxed .item {
+  text-align: center;
+  flex: 0 0 auto; /* Prevent items from shrinking or growing */
+  margin-right: 15px; /* Optional: Add space between items */
+}
+
+.team-boxed .item .box {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.team-boxed .item .name {
+  font-weight: bold;
+  margin-top: 28px;
+  margin-bottom: 8px;
+  color: inherit;
+}
+
+.team-boxed .item .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #050000;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+.team-boxed .item .description {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-family: "Raleway", serif;
+}
+
+.team-boxed .item img {
+  max-width: 160px;
+}
+
+.team-boxed .social {
+  font-size: 18px;
+  color: #a2a8ae;
+}
+
+.team-boxed .social a {
+  color: inherit;
+  margin: 0 10px;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.team-boxed .social a:hover {
+  opacity: 1;
+}
+
+.year-1 {
+  position: relative;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 130px;
+  letter-spacing: 0px;
+  text-transform: none;
+  color: #adab3f;
+  text-shadow: 0px 4px 7px rgba(173, 171, 63, .5);
+}
+
+.year {
+  position: relative;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 130px;
+  letter-spacing: 0px;
+  text-transform: none;
+  color: #e30079;
+  text-shadow: #e3007979;
+  padding-top: 75px;
+}
+
+.box {
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  background: #fff;
+  border-radius: 6px;
+  margin: 0;
+  border-top-left-radius: 0; /* no rounded top left */
+  border-top-right-radius: 0; /* no rounded top right */
+  box-shadow: 0px 11px 20px 0px rgba(172, 40, 40, 0.548); /* Box shadow */
+}
+
+.box-1 {
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  background: #fff;
+  border-radius: 6px;
+  border-top-left-radius: 0; /* no rounded top left */
+  border-top-right-radius: 0; /* no rounded top right */
+  box-shadow: 0px 11px 20px 0px rgba(160, 170, 21, 0.466); /* Box shadow */
+}
+
+/* Colored bottom border/bar */
+.box-1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;                   /* Thickness of the colored strip */
+  background-color: #adab3f;     /* Change color here */
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;                   /* Thickness of the colored strip */
+  background-color: #e30079;     /* Change color here */
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* Ensure no column spacing */
+.row.people {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.people .col-md-6,
+.row.people .col-lg-2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Optional: To make the scroll smooth */
+.team-boxed .people {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Style for social icons */
+.team-boxed .social a {
+  color: inherit;
+  margin: 0 10px;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.team-boxed .social a:hover {
+  opacity: 1;
+}
