@@ -1669,3 +1669,28 @@ a.a-tag {
 .lm-directors {
     padding: 20px;
 }
+
+
+
+/* section image */
+
+.section-img {
+      width: 360px;      /* Fixed width */
+      height: 280px;     /* Fixed height */
+      object-fit: cover; /* Crop to fit */
+      border-radius: 4px;
+    }
+
+    .section-block {
+      margin-bottom: 60px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+
+    .subheading {
+      font-size: 1rem;
+      color: #666;
+    }
