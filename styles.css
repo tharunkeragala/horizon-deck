@@ -40,6 +40,7 @@
     border: none;
     color: black;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, .1);
+    border-radius: 15px;
 }
 
 .container-fluid {
@@ -97,6 +98,8 @@
 .btn {
     border: none;
     color: #000000;
+    border-radius: 50px;
+
 }
 
 /* Hover state */
@@ -104,6 +107,8 @@
     background-color: #50C4F2;
     color: #000000;
     border: none;
+    border-radius: 50px;
+
 }
 
 /* Active when clicked*/
@@ -112,6 +117,8 @@
     background-color: #148DD9;
     color: #000;
     transform: translateY(1px);
+    border-radius: 50px;
+
 }
 
 /* Active page button */
@@ -119,6 +126,7 @@
     background-color: #148DD9;
     color: #000000;
     border: none;
+    border-radius: 50px;
 }
 
 /* Outline-success buttons*/
@@ -138,11 +146,14 @@
 .dropdown-item:active {
     background-color: #50C4F2;
     color: #000000;
+    border-radius: 50px;
 }
 
 .dropdown-item:hover {
     background-color: #50c4f288;
     color: #000000;
+    border-radius: 50px;
+
 }
 
 body {
@@ -1149,9 +1160,9 @@ a.a-tag {
 /* Form controls */
 .form-control, 
 .form-select {
-    border-radius: 10px;
-    padding: 12px;
-    border: 1px solid #cbdceb;
+    border-radius: 50px;
+    padding: 5px;
+    /* border: 1px solid #cbdceb; */
     box-shadow: none;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1694,3 +1705,101 @@ a.a-tag {
       font-size: 1rem;
       color: #666;
     }
+
+
+   /* Floating LEFT text */
+.carousel-floating-info {
+    position: absolute;
+    bottom: 230px;       /* same vertical alignment as button */
+    left: 120px;
+
+    color: white;
+    max-width: 300px;
+}
+
+.carousel-floating-info h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.carousel-floating-info p {
+    margin: 4px 0 0;
+    font-size: 14px;
+}
+
+/* Floating RIGHT button */
+.carousel-floating-btn {
+    position: absolute;
+    bottom: 250px;
+    right: 120px;
+
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s ease;
+}
+
+.carousel-floating-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* search bar */
+
+.search-wrapper {
+    position: relative;
+}
+
+.search-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 0;
+    opacity: 0;
+    /* padding: 6px 10px; */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    outline: none;
+}
+
+/* Expanded state */
+.search-form.active .search-input {
+    width: 200px;
+    opacity: 1;
+}
+
+/* Search icon button */
+.search-icon-btn {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 6px;
+    color: black; /* you can change this */
+    transition: color 0.3s ease;
+}
+
+.search-icon {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.search-icon.scrolled {
+    color: black;
+}
+
+/* Expanded state */
+.search-form.active .search-input {
+    width: 200px;
+    opacity: 1;
+}
