@@ -399,63 +399,64 @@
         </section>
 
         <!-- special offers -->
-        <section class="special-offers-full"
-            style="background-image: url('./Images/botanical_garden.jpg'); height: 800px;">
-            <div class="fade-overlay"></div>
-            <div class="container">
-                <!-- INTRO -->
-                <div class="intro-wrapper">
-                    <div class="sub-title">
-                        <span class="dot"></span>
-                        <span class="text">Deals and Special Offers</span>
-                    </div>
-                    <h2 class="main-title">Latest Promotions</h2>
-                    <h3 class="sub-heading">More Reasons to Say Yes</h3>
-                    <a class="view-all" href="#">
-                        View All Special Offers <span class="arrow">&#9656;</span>
-                    </a>
+        <section class="special-offers-full" style="background-image: url('./Images/botanical_garden.jpg'); height: 800px;">
+    <div class="fade-overlay"></div>
+    <div class="container">
+        <!-- INTRO -->
+        <div class="intro-wrapper">
+            <div class="sub-title">
+                <span class="dot"></span>
+                <span class="text">Deals and Special Offers</span>
+            </div>
+            <h2 class="main-title">Latest Promotions</h2>
+            <h3 class="sub-heading">More Reasons to Say Yes</h3>
+            <a class="view-all" href="#">
+                View All Special Offers <span class="arrow">&#9656;</span>
+            </a>
+        </div>
+        
+        <!-- CARDS -->
+        <div class="offers-cards" id="offersCards">
+            <div class="offer-card">
+                <div class="offer-img">
+                    <img src="https://via.placeholder.com/800x500" alt="">
+                    <div class="tag">Save up to 15%</div>
                 </div>
-                <!-- CARDS -->
-                <div class="offers-cards">
-                    <div class="offer-card">
-                        <div class="offer-img">
-                            <img src="https://via.placeholder.com/800x500" alt="">
-                            <div class="tag">Save up to 15%</div>
-                        </div>
-                        <div class="offer-body">
-                            <div class="brand"><span class="dot"></span> Jetwing Travels</div>
-                            <h3 class="offer-title">Kandy Perahera 2024</h3>
-                            <p class="start-price">Starting from $1875</p>
-                            <p class="desc">
-                                Witness one of the oldest and biggest Buddhist festivals in Sri Lanka…
-                            </p>
-                            <a class="enquire" href="#">Enquire Now <span class="arrow">&#9656;</span></a>
-                        </div>
-                    </div>
-                    <div class="offer-card">
-                        <div class="offer-img">
-                            <img src="https://via.placeholder.com/800x500" alt="">
-                            <div class="tag">Save up to 15%</div>
-                        </div>
-                        <div class="offer-body">
-                            <div class="brand"><span class="dot"></span> Jetwing Travels</div>
-                            <h3 class="offer-title">Honeymoon Special Offer</h3>
-                            <p class="start-price">Starting from $3195</p>
-                            <p class="desc">
-                                Embark on a journey of love! We craft unforgettable romantic escapes…
-                            </p>
-                            <a class="enquire" href="#">Enquire Now <span class="arrow">&#9656;</span></a>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- PAGINATION BUTTONS -->
-                <div class="offers-slider-arrows">
-                    <button class="prev">&#8592;</button>
-                    <button class="next">&#8594;</button>
+                <div class="offer-body">
+                    <div class="brand"><span class="dot"></span> Jetwing Travels</div>
+                    <h3 class="offer-title">Kandy Perahera 2024</h3>
+                    <p class="start-price">Starting from $1875</p>
+                    <p class="desc">
+                        Witness one of the oldest and biggest Buddhist festivals in Sri Lanka…
+                    </p>
+                    <a class="enquire" href="#">Enquire Now <span class="arrow">&#9656;</span></a>
                 </div>
             </div>
-        </section>
+            <div class="offer-card">
+                <div class="offer-img">
+                    <img src="https://via.placeholder.com/800x500" alt="">
+                    <div class="tag">Save up to 15%</div>
+                </div>
+                <div class="offer-body">
+                    <div class="brand"><span class="dot"></span> Jetwing Travels</div>
+                    <h3 class="offer-title">Honeymoon Special Offer</h3>
+                    <p class="start-price">Starting from $3195</p>
+                    <p class="desc">
+                        Embark on a journey of love! We craft unforgettable romantic escapes…
+                    </p>
+                    <a class="enquire" href="#">Enquire Now <span class="arrow">&#9656;</span></a>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+
+        <!-- PAGINATION BUTTONS -->
+        <div class="offers-slider-arrows">
+            <button class="prev" id="prevButton">&#8592;</button>
+            <button class="next" id="nextButton">&#8594;</button>
+        </div>
+    </div>
+</section>
 
         <!-- featured tours -->
         <section class="hm-featured-tours" style="padding-top: 80px;">
@@ -538,6 +539,7 @@
         </section>
         <!-- body section end -->
     </main>
+
     <footer class="text-dark pt-5" style="background: linear-gradient(to bottom, #ffffff, #a8d0f0);">
         <div class="container pb-5">
             <div class="row align-items-start">
@@ -620,7 +622,6 @@
             </div>
         </div>
     </footer>
-
 
     <!-- Scripts -->
 
