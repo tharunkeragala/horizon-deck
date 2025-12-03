@@ -1805,3 +1805,206 @@ a.a-tag {
     width: 200px;
     opacity: 1;
 }
+
+.card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+    z-index: 0;
+}
+
+
+/* special offers */
+/* =====================================================
+   FULL BACKGROUND SECTION
+===================================================== */
+.special-offers-full {
+    position: relative;
+    /* padding-top: 150px; */
+    padding-bottom: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* FADE overlay on top of background */
+.special-offers-full .fade-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.95),
+        rgba(255,255,255,0.75),
+        rgba(255,255,255,0.15),
+        rgba(255,255,255,0)
+    );
+    z-index: 1;
+}
+
+/* Content sits above fade */
+.special-offers-full .container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+/* =====================================================
+   TITLES + DOT
+===================================================== */
+
+.sub-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sub-title .dot {
+    width: 10px;
+    height: 10px;
+    background: #e30079;
+    border-radius: 50%;
+}
+
+.sub-title .text {
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    color: #000;
+}
+
+.main-title {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.sub-heading {
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.view-all {
+    display: inline-flex;
+    gap: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #8ea523;
+}
+.view-all:hover { color: #6e861c; }
+
+/* =====================================================
+   CARD SECTION
+===================================================== */
+
+.offers-cards {
+    display: flex;
+    gap: 40px;
+    margin-top: 25px; /* pushes cards down visually */
+    justify-content: center;
+}
+
+.offer-card {
+    width: 50%;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+.offer-card:hover { transform: translateY(-6px); }
+
+.offer-img img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+.tag {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px 20px;
+    background: rgba(0,0,0,0.65);
+    color: white;
+    font-size: 14px;
+    font-family: "Playfair Display", serif;
+}
+
+.offer-img { position: relative; }
+
+.offer-body {
+    padding: 40px;
+    text-align: left;
+}
+
+/* Brand row */
+.offer-body .brand {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+}
+
+.offer-body .brand .dot {
+    width: 8px;
+    height: 8px;
+    background: #e30079;
+    border-radius: 50%;
+}
+
+.offer-title {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+.start-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #8ea523;
+    margin-bottom: 10px;
+}
+
+.desc {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+
+/* Enquire Link */
+.enquire {
+    color: #8ea523;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.enquire:hover { color: #6e861c; }
+
+.offers-slider-arrows button {
+    background: #ffffffd9;
+    border: 1px solid #ccc;
+    padding: 12px 18px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.offers-slider-arrows button:hover {
+    background: #eee;
+}
+@media (max-width: 992px) {
+    .offers-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .offer-card {
+        width: 90%;
+    }
+}
+
+
+
