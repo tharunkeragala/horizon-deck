@@ -158,13 +158,13 @@
 
 body {
     font-size: 18px;
-    font-family: "Playfair Display", serif !important;
+      body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,'Noto Sans',sans-serif;line-height:1.45;color:#222;background:#fff !important;}
 }
 
 .feature-list .text {
     font-size: 15px;
     line-height: 1.6;
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
 }
 
 /* Hero section */
@@ -227,13 +227,13 @@ body {
 .carousel-caption .title {
     font-size: 5.6875vw;
     line-height: 4.1666666667vw;
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
 }
 
 .carousel-caption .sub-title {
     font-size: 2.175vw;
     line-height: 2.5vw;
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     margin-top: 15px;
 }
 
@@ -270,7 +270,7 @@ body {
 .title {
     font-size: 42px;
     font-weight: 700;
-    font-family: "Playfair Display", Didot, "Bodoni MT", "Times New Roman", serif;
+    /* font-family: "Playfair Display", Didot, "Bodoni MT", "Times New Roman", serif; */
     color: #ffffff;
     margin-bottom: 15px;
 }
@@ -280,7 +280,7 @@ body {
     font-weight: 400;
     color: #ffffff;
     margin-bottom: 10px;
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     padding-top: 15px;
 
 }
@@ -288,7 +288,7 @@ body {
 .desc {
     font-size: 16px;
     /* line-height: 1.8; */
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     margin-bottom: 20px;
 }
 
@@ -379,8 +379,8 @@ body {
 
 .hm-passion .title-wrapper .sub-title {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column; */
+    align-items: baseline;
     justify-content: center;
 }
 
@@ -395,7 +395,7 @@ body {
 .hm-passion .title-wrapper .sub-title .text {
     display: inline-flex;
     flex-direction: column;
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     font-weight: 500;
     line-height: 18px;
     letter-spacing: 0px;
@@ -406,7 +406,7 @@ body {
 }
 
 .hm-passion .title-wrapper .title {
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     font-weight: 600;
     font-size: 45px;
     line-height: 25px;
@@ -418,7 +418,7 @@ body {
 }
 
 .hm-passion .title-wrapper .title-2 {
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     font-weight: 400;
     font-size: 26px;
     line-height: 34px;
@@ -526,7 +526,7 @@ body {
 .hm-locales .title-wrapper .sub-title .text {
     display: inline-flex;
     flex-direction: column;
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
@@ -536,7 +536,7 @@ body {
 }
 
 .hm-locales .title-wrapper .title {
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     font-weight: 600;
     font-size: 30px;
     line-height: 37px;
@@ -548,7 +548,7 @@ body {
 }
 
 .hm-locales .title-wrapper .title-2 {
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     font-weight: 400;
     font-size: 26px;
     line-height: 34px;
@@ -710,7 +710,7 @@ body {
 .hm-destinations .title-wrapper .sub-title .text {
     display: inline-flex;
     flex-direction: column;
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
@@ -720,7 +720,7 @@ body {
 }
 
 .hm-destinations .title-wrapper .title {
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     font-weight: 600;
     font-size: 30px;
     line-height: 37px;
@@ -733,7 +733,7 @@ body {
 }
 
 .hm-destinations .title-wrapper .title-2 {
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     font-weight: 400;
     font-size: 26px;
     line-height: 34px;
@@ -777,7 +777,7 @@ body {
     top: auto;
     background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0)); /* fade gradient */
     color: #fff;
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     padding: 20px;
 }
 
@@ -1002,7 +1002,7 @@ body {
 }
 
 .destination-title {
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     font-size: 25.6px;
     line-height: 33.6px;
     margin-bottom: 6.4px;
@@ -1011,7 +1011,7 @@ body {
 }
 
 .destination-category {
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     font-size: 11.2px;
     line-height: 14.4px;
     font-weight: 500;
@@ -1021,9 +1021,9 @@ body {
     gap: 4px;
 }
 
-.icon-svg {
-    width: 0.625vw;
-    height: 9.6px;
+.icon svg {
+    width: 1vw;
+    height: 20px;
     margin-right: 2.4px;
 }
 
@@ -1032,7 +1032,7 @@ body {
 .hm-featured-tours .title-wrapper .sub-title .text {
     display: inline-flex;
     flex-direction: column;
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
@@ -1042,7 +1042,7 @@ body {
 }
 
 .hm-featured-tours .title-wrapper .title {
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     font-weight: 600;
     font-size: 30px;
     line-height: 37px;
@@ -1054,7 +1054,7 @@ body {
 }
 
 .hm-featured-tours .title-wrapper .title-2 {
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     font-weight: 400;
     font-size: 26px;
     line-height: 34px;
@@ -1103,7 +1103,7 @@ body {
 
 .page-intro {
     padding-top: 10px;
-    font-family: "Playfair Display";
+    /* font-family: "Playfair Display"; */
     font-size: 13px;
     padding-left: 35px;
 }
@@ -1175,13 +1175,12 @@ a.a-tag {
 
 .form-control:focus, 
 .form-select:focus {
-    border-color: #0077b6;
+    border-color: #0076b600;
     box-shadow: 0 0 0 0.15rem rgba(0, 119, 182, 0.25);
 }
 
 /* Input group (flag + phone) */
 .input-group-text {
-    background: #f0f8ff;
     border-radius: 10px 0 0 10px !important;
 }
 
@@ -1275,7 +1274,7 @@ a.a-tag {
     margin: 0 auto; /* Centers the block */
     text-align: center; /* Centers the text content */
     padding: 20px;
-    font-family: "Playfair Display", serif !important;
+    /* font-family: "Playfair Display", serif !important; */
     color: #333;
 }
 
@@ -1535,14 +1534,14 @@ a.a-tag {
   font-weight: bold;
   color: #050000;
   font-size: 20px;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
 }
 
 .team-boxed .item .description {
   font-size: 15px;
   margin-top: 15px;
   margin-bottom: 20px;
-  font-family: "Raleway", serif;
+  /* font-family: "Raleway", serif; */
 }
 
 .team-boxed .item img {
@@ -1567,7 +1566,7 @@ a.a-tag {
 
 .year-1 {
   position: relative;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
   font-weight: 600;
   font-size: 80px;
   line-height: 130px;
@@ -1579,7 +1578,7 @@ a.a-tag {
 
 .year {
   position: relative;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
   font-weight: 600;
   font-size: 80px;
   line-height: 130px;
@@ -1767,9 +1766,9 @@ a.a-tag {
 .search-input {
     width: 0;
     opacity: 0;
-    /* padding: 6px 10px; */
+    padding: 6px 12px;
     border: 1px solid #ccc;
-    border-radius: 20px;
+        border-radius: 22px 22px 22px 22px;
     transition: width 0.3s ease, opacity 0.3s ease;
     outline: none;
 }
@@ -1848,43 +1847,41 @@ a.a-tag {
     text-align: center;
 }
 
-/* =====================================================
-   TITLES + DOT
-===================================================== */
+   /* TITLES + DOT */
 
-.sub-title {
+.special-offers-full .sub-title {
     display: inline-flex;
     align-items: center;
     gap: 8px;
 }
 
-.sub-title .dot {
+.special-offers-full .sub-title .dot {
     width: 10px;
     height: 10px;
     background: #148DD9;
     border-radius: 50%;
 }
 
-.sub-title .text {
-    font-family: "Playfair Display", serif;
+.special-offers-full .sub-title .text {
+    /* font-family: "Playfair Display", serif; */
     font-size: 18px;
     color: #000;
 }
 
-.main-title {
-    font-family: "Playfair Display", serif;
+.special-offers-full .main-title {
+    /* font-family: "Playfair Display", serif; */
     font-size: 42px;
     font-weight: 700;
     margin-top: 10px;
 }
 
-.sub-heading {
-    font-family: "Playfair Display", serif;
+.special-offers-full .sub-heading {
+    /* font-family: "Playfair Display", serif; */
     font-size: 26px;
     margin-bottom: 25px;
 }
 
-.view-all {
+.special-offers-full .view-all {
     display: inline-flex;
     gap: 6px;
     font-size: 16px;
@@ -1892,11 +1889,9 @@ a.a-tag {
     text-decoration: none;
     color: #148DD9;
 }
-.view-all:hover { color: #4BD4F2; }
+.special-offers-full .view-all:hover { color: #4BD4F2; }
 
-/* =====================================================
-   CARD SECTION
-===================================================== */
+   /* CARD SECTION */
 
 .offers-cards {
     display: flex;
@@ -1929,7 +1924,7 @@ a.a-tag {
     background: rgba(0,0,0,0.65);
     color: white;
     font-size: 14px;
-    font-family: "Playfair Display", serif;
+    /* font-family: "Playfair Display", serif; */
 }
 
 .offer-img { position: relative; }
@@ -1955,7 +1950,7 @@ a.a-tag {
 }
 
 .offer-title {
-    font-family: "Playfair Display", serif;
+    /* font-family: "Playfair Display", serif; */
     font-size: 28px;
     margin-top: 15px;
 }
