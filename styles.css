@@ -1861,7 +1861,7 @@ a.a-tag {
 .sub-title .dot {
     width: 10px;
     height: 10px;
-    background: #e30079;
+    background: #148DD9;
     border-radius: 50%;
 }
 
@@ -1890,9 +1890,9 @@ a.a-tag {
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
-    color: #8ea523;
+    color: #148DD9;
 }
-.view-all:hover { color: #6e861c; }
+.view-all:hover { color: #4BD4F2; }
 
 /* =====================================================
    CARD SECTION
@@ -1950,7 +1950,7 @@ a.a-tag {
 .offer-body .brand .dot {
     width: 8px;
     height: 8px;
-    background: #e30079;
+    background: #4BD4F2;
     border-radius: 50%;
 }
 
@@ -1963,7 +1963,7 @@ a.a-tag {
 .start-price {
     font-size: 16px;
     font-weight: 600;
-    color: #8ea523;
+    color: #148DD9;
     margin-bottom: 10px;
 }
 
@@ -1975,12 +1975,12 @@ a.a-tag {
 
 /* Enquire Link */
 .enquire {
-    color: #8ea523;
+    color: #148DD9;
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
 }
-.enquire:hover { color: #6e861c; }
+.enquire:hover { color: #4BD4F2; }
 
 .offers-slider-arrows button {
     background: #ffffffd9;
@@ -2005,6 +2005,3 @@ a.a-tag {
         width: 90%;
     }
 }
-
-
-
