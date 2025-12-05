@@ -1,23 +1,7 @@
-//Nav bar scroll
-
-const searchForm = document.querySelector(".search-form");
-const searchBtn = document.querySelector(".search-icon-btn");
-const searchInput = document.querySelector(".search-input");
-const searchIcon = document.querySelector(".search-icon");
-
-// Expand/collapse on click
-searchBtn.addEventListener("click", () => {
-  searchForm.classList.toggle("active");
-
-  if (searchForm.classList.contains("active")) {
-    searchInput.focus();
-  }
-});
-
-// Scroll-based color change (your existing logic)
+// Scroll-based color change
 window.onscroll = function () {
   let navbar = document.querySelector(".custom-navbar");
-  let trigger = window.innerWidth <= 768 ? 340 : 930;
+  let trigger = window.innerHeight; // Trigger at 100% screen height
 
   if (window.scrollY > trigger) {
     navbar.classList.add("scrolled");

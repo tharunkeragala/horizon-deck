@@ -823,7 +823,7 @@ body {
 /* Optional: Adjust for smaller screens */
 @media (max-width: 768px) {
     .hero-section {
-        height: 400px;
+        height: 100vh;
         /* Adjust height for mobile */
     }
 
@@ -879,6 +879,60 @@ body {
     }
 
 }
+
+@media (min-width: 768px) {
+    .hero-section {
+        height: 100vh; /* Adjust height for laptops */
+    }
+
+    #carouselExampleCaptions .carousel-item img {
+        object-position: center;
+        /* Ensure image is centered in the container */
+    }
+
+    .carousel-caption {
+        bottom: 20px; /* Move caption slightly higher */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .carousel-caption h1 {
+        font-size: 24px; /* Adjust title size */
+    }
+
+    .carousel-caption p {
+        font-size: 16px; /* Adjust paragraph size */
+    }
+
+    .carousel-caption {
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: auto;
+    }
+
+    .carousel-caption .title {
+        font-size: 5vw; /* Slightly smaller than mobile */
+        line-height: 4vw;
+    }
+
+    .carousel-caption .sub-title {
+        font-size: 2.5vw;
+        line-height: 3vw;
+        margin-top: 8px;
+    }
+
+    .navbar {
+        height: fit-content;
+        background-image: linear-gradient(#000000, transparent);
+    }
+
+    .navbar.scrolled {
+        background-color: #fff;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, .1);
+        background-image: none;
+        height: fit-content;
+    }
+}
+
 
 /* ------------------------------
    MOBILE RESPONSIVE STYLES 
@@ -1711,7 +1765,7 @@ a.a-tag {
    /* Floating LEFT text */
 .carousel-floating-info {
     position: absolute;
-    bottom: 230px;       /* same vertical alignment as button */
+    bottom: 40px;       /* same vertical alignment as button */
     left: 120px;
 
     color: white;
@@ -1732,7 +1786,7 @@ a.a-tag {
 /* Floating RIGHT button */
 .carousel-floating-btn {
     position: absolute;
-    bottom: 250px;
+    bottom: 40px;
     right: 120px;
 
     background: transparent;
