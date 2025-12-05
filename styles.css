@@ -226,7 +226,7 @@ body {
 
 .carousel-caption .title {
     font-size: 5.6875vw;
-    line-height: 4.1666666667vw;
+    line-height: 5.166667vw;
     /* font-family: "Playfair Display", serif !important; */
 }
 
@@ -2000,3 +2000,4 @@ a.a-tag {
         width: 90%;
     }
 }
+
