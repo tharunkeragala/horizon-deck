@@ -1197,7 +1197,7 @@ body {
 
 @media (max-width: 1440px) {
     .page-intro {
-        height: 10%;
+        height: 5%;
         padding: 10px 1rem;
     }
 }
@@ -1827,7 +1827,7 @@ a.a-tag {
     position: absolute;
     bottom: 40px;       /* same vertical alignment as button */
     left: 120px;
-
+    height: 15%;
     color: white;
     max-width: 300px;
 }
@@ -1846,7 +1846,7 @@ a.a-tag {
 /* Floating RIGHT button */
 .carousel-floating-btn {
     position: absolute;
-    bottom: 40px;
+    bottom: 12%;
     right: 120px;
 
     background: transparent;
