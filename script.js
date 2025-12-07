@@ -27,3 +27,37 @@ window.addEventListener("scroll", () => {
         searchIcon.classList.remove("scrolled"); // turn white
     }
 });
+
+//open the image overlay and close at the same place
+
+// JavaScript to fix scroll position issue
+document.querySelectorAll('.gallery a').forEach((link) => {
+  link.addEventListener('click', function (event) {
+    const targetId = this.getAttribute('href').substring(1); // Get lightbox id
+    const lightbox = document.getElementById(targetId);
+
+    // Record the scroll position before opening the lightbox
+    const scrollPosition = window.scrollY;
+
+    // Open lightbox
+    lightbox.style.opacity = 1;
+    lightbox.style.pointerEvents = 'inherit';
+    lightbox.style.transform = 'scale(1)';
+
+    // When closing the lightbox, restore the scroll position
+    const closeButton = lightbox.querySelector('.close');
+    closeButton.addEventListener('click', function (e) {
+      e.preventDefault();
+      lightbox.style.opacity = 0;
+      lightbox.style.pointerEvents = 'none';
+      lightbox.style.transform = 'scale(0.8)';
+
+      // Scroll back to the original position
+      window.scrollTo(0, scrollPosition);
+    });
+  });
+});
+
+
+
+
