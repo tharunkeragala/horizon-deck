@@ -28,7 +28,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
-//open the image overlay and close at the same place
+//open the image overlay and close at the same place 
 
 // JavaScript to fix scroll position issue
 document.querySelectorAll('.gallery a').forEach((link) => {
