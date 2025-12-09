@@ -1641,7 +1641,7 @@ a.a-tag {
 .card {
     transition: 0.3s ease;
     cursor: pointer;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     overflow: hidden;
     position: relative;
 }
@@ -1664,6 +1664,7 @@ a.a-tag {
 /* Slight zoom on image */
 .card-img-top {
     transition: 0.4s ease;
+    height: 70%;
 }
 
 .card:hover .card-img-top {
@@ -2122,6 +2123,14 @@ a.a-tag {
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
     color: var(--bs-card-color);
     z-index: 0;
+    height: 200px;
+}
+
+.card-title {
+    margin-bottom: var(--bs-card-title-spacer-y);
+    color: var(--bs-card-title-color);
+    padding: 10px;
+    margin-top: 15px;
 }
 
 
