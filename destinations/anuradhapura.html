@@ -214,7 +214,7 @@
                                         <img src="../Images/carousel images/Mihintale-Anuradhapura-sri-lanka-800-x-500.jpg"
                                             class="card-img-top" style="border-radius: 0px;" alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
+                                            <h5 class="card-title">Mihintale</h5>
                                             <p class="card-text">Deemed the birthplace of Buddhism in Sri Lanka, this
                                                 500m tall outcrop features ancient stupas, a stone hewed stairway, and
                                                 68 cave dwellings.</p>
@@ -256,17 +256,17 @@
 
         <!-- special offers -->
         <section class="special-offers-full"
-            style="background-image: url('Images/carousel images/offer.jpg'); height: 800px;">
+            style="background-image: url('../Images/carousel images/offer.jpg'); height: 800px; margin-top: 10%; margin-bottom: 20%;">
             <div class="fade-overlay"></div>
             <div class="container">
                 <!-- INTRO -->
                 <div class="intro-wrapper">
                     <div class="sub-title">
                         <span class="dot"></span>
-                        <span class="text">Deals and Special Offers</span>
+                        <span class="text">Unmatched Deals in Every Destination</span>
                     </div>
-                    <h2 class="main-title">Latest Promotions</h2>
-                    <h3 class="sub-heading">More Reasons to Say Yes</h3>
+                    <h2 class="main-title">Special Offers</h2>
+                    <h3 class="sub-heading">Journey Beyond, Save Beyond</h3>
                     <a class="view-all" href="#">
                         View All Special Offers <span class="arrow">&#9656;</span>
                     </a>
@@ -280,13 +280,19 @@
                             <div class="tag">Save up to 15%</div>
                         </div>
                         <div class="offer-body">
-                            <div class="brand"><span class="dot"></span> HorizonDeck</div>
+                            <div class="brand"><span class="dot"></span> HorizonDeck Travels</div>
                             <h3 class="offer-title">Luxe Wellness</h3>
                             <p class="start-price">Starting from $2980</p>
                             <p class="desc">
-                                Immerse yourself in bespoke retreats crafted for ultimate rejuvenation. From exotic spa therapies to exclusive mindfulness escapes, our curated journeys redefine luxury. Elevate your well-being amid breathtaking destinations, where every moment is tailored to nurture your mind, body and soul. Embark on a transformative voyage with us.
+                                Immerse yourself in bespoke retreats crafted for ultimate rejuvenation. From exotic spa
+                                therapies to exclusive mindfulness escapes, our curated journeys redefine luxury.
+                                Elevate your well-being amid breathtaking destinations, where every moment is tailored
+                                to nurture your mind, body and soul. Embark on a transformative voyage with us.
                             </p>
-                            <a class="enquire" href="#">Enquire Now <span class="arrow">&#9656;</span></a>
+                            <!-- Enquire Now Link - Trigger Modal -->
+                            <a class="enquire" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire
+                                Now <span class="arrow">&#9656;</span></a>
+
                         </div>
                     </div>
                     <div class="offer-card">
@@ -299,22 +305,110 @@
                             <h3 class="offer-title">Luxury Winter Getaway</h3>
                             <p class="start-price">Starting from $3350</p>
                             <p class="desc">
-                                Embrace the season's charm with our Luxury Winter Getaway Offer! Bask in the cozy embrace of opulent accommodations, where crackling fires and bespoke experiences await. Indulge in the magic of winter, surrounded by unparalleled luxury and tailored moments that define the essence of a perfect escape. A winter escape that transcends the ordinary.
+                                Embrace the season's charm with our Luxury Winter Getaway Offer! Bask in the cozy
+                                embrace of opulent accommodations, where crackling fires and bespoke experiences await.
+                                Indulge in the magic of winter, surrounded by unparalleled luxury and tailored moments
+                                that define the essence of a perfect escape. A winter escape that transcends the
+                                ordinary.
                             </p>
-                            <a class="enquire" href="#">Enquire Now <span class="arrow">&#9656;</span></a>
+                            <a class="enquire" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire
+                                Now <span class="arrow">&#9656;</span></a>
                         </div>
                     </div>
-                    <!-- Add more cards as needed -->
                 </div>
-
-                <!-- PAGINATION BUTTONS -->
-                <!-- <div class="offers-slider-arrows">
-            <button class="prev" id="prevButton">&#8592;</button>
-            <button class="next" id="nextButton">&#8594;</button>
-        </div> -->
             </div>
         </section>
 
+        <!-- Modal Structure -->
+        <div class="modal fade" id="enquireModal" tabindex="-1" aria-labelledby="enquireModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="enquireModalLabel">Submit Your Inquiry</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="max-height: 80vh; overflow-y:auto;">
+                        <!-- Contact Form Inside Modal -->
+                        <div class="container">
+                            <form>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="yourName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="yourName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="yourName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="yourName" required>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="yourEmail" class="form-label">Your Email</label>
+                                    <input type="email" class="form-control" id="yourEmail" required>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="countrySelect" class="form-label">Country</label>
+                                        <select class="form-select" id="countrySelect" required>
+                                            <option selected disabled value="">Select</option>
+                                            <option value="lk">Sri Lanka</option>
+                                            <option value="us">United States</option>
+                                            <option value="ca">Canada</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="phoneNumber" class="form-label">Phone</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">
+                                                <img src="https://flagcdn.com/w20/lk.png" alt="LK Flag"
+                                                    style="width: 20px;">
+                                                +94
+                                            </span>
+                                            <input type="tel" class="form-control" id="phoneNumber"
+                                                placeholder="e.g, 77 000 0123" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="noAdults" class="form-label">No Of Adults</label>
+                                        <input type="number" class="form-control" id="noAdults" min="1" value="1"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="noInfants" class="form-label">No Of Infants</label>
+                                        <input type="number" class="form-control" id="noInfants" min="0" value="0"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="arrivalDate" class="form-label">Arrival Date</label>
+                                    <input type="date" class="form-control" id="arrivalDate">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="messageArea" class="form-label">Message</label>
+                                    <textarea class="form-control" id="messageArea" rows="3"></textarea>
+                                </div>
+
+                                <div class="form-check pt-2 pb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">
+                                        Privacy Policy / Terms and Conditions.
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- body section end -->
     </main>
 
