@@ -1664,7 +1664,8 @@ a.a-tag {
 /* Slight zoom on image */
 .card-img-top {
     transition: 0.4s ease;
-    height: 70%;
+    height:  350px;
+    object-fit: cover; /* Ensures the image covers the space without distortion */
 }
 
 .card:hover .card-img-top {
@@ -1880,8 +1881,8 @@ a.a-tag {
     line-height: 130px;
     letter-spacing: 0px;
     text-transform: none;
-    color: #e30079;
-    text-shadow: #e3007979;
+    color: #0088e3;
+    text-shadow: 0px 4px 7px rgba(0, 136, 227, .5);
     padding-top: 75px;
 }
 
@@ -1896,7 +1897,7 @@ a.a-tag {
     /* no rounded top left */
     border-top-right-radius: 0;
     /* no rounded top right */
-    box-shadow: 0px 11px 20px 0px rgba(172, 40, 40, 0.548);
+    box-shadow: 0px 11px 20px 0px rgba(40, 117, 172, 0.548);
     /* Box shadow */
 }
 
@@ -1937,7 +1938,7 @@ a.a-tag {
     width: 100%;
     height: 6px;
     /* Thickness of the colored strip */
-    background-color: #e30079;
+    background-color: #0985a8;
     /* Change color here */
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -2131,6 +2132,11 @@ a.a-tag {
     color: var(--bs-card-title-color);
     padding: 10px;
     margin-top: 15px;
+    font-size: 18px;
+}
+
+.card-text{
+    font-size: 14px;
 }
 
 
